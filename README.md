@@ -136,7 +136,7 @@ The following applications should be listed - NB! it's important to maintain the
         'django_notify',
         'mptt',
         'sekizai',
-        'sorl.thumbnail',
+        'easy_thumbnails',
         'wiki',
         'wiki.plugins.attachments',
         'wiki.plugins.notifications',
@@ -238,7 +238,7 @@ So far the dependencies are:
  * [Markdown>=2.2.0](https://github.com/waylan/Python-Markdown)
  * [django-mptt>=0.5.3](https://github.com/django-mptt/django-mptt)
  * [django-sekizai](https://github.com/ojii/django-sekizai/)
- * [sorl-thumbnail](https://github.com/sorl/sorl-thumbnail)
+ * [easy_thumbnails](https://github.com/SmileyChris/easy-thumbnails)
  * PIL (Python Imaging Library)
  * Python>=2.5<3 (Python 3 not yet supported)
 

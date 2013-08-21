@@ -23,7 +23,7 @@ settings.configure(
         'django_notify',
         'mptt',
         'sekizai',
-        'sorl.thumbnail',
+        'easy_thumbnails',
         'wiki',
         'wiki.plugins.attachments',
         'wiki.plugins.notifications',

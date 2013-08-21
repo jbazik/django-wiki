@@ -10,9 +10,6 @@ import settings
 from wiki.models.pluginbase import RevisionPlugin, RevisionPluginRevision
 from django.db.models import signals
 
-if not "sorl.thumbnail" in django_settings.INSTALLED_APPS:
-    raise ImproperlyConfigured('wiki.plugins.images: needs sorl.thumbnail in INSTALLED_APPS')
-
 def upload_path(instance, filename):
     # Has to match original extension filename
         

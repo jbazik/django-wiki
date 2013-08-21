@@ -24,7 +24,6 @@ function insert_image(image_id) {
   <table class="table" style="margin-bottom: 0;" id="image-list">
     {% for image in images %}
       {% with image.current_revision.imagerevision as revision %}
-      {% thumbnail revision.image "50x50" crop="center" as thumb %}
         <tr>
           <td style="white-space: nowrap;">
             <p>{% trans "Image id" %}: {{ image.id }}</code></p>
@@ -37,11 +36,10 @@ function insert_image(image_id) {
           </td>
           <td>
             <div class="thumbnail">
-              <img src="{{ thumb.url }}" alt="{{ revision.get_filename }}" />
+              <img src="{% thumbnail revision.image 50x50 crop %}" alt="{{ revision.get_filename }}" />
             </div>
           </td>
         </tr>
-      {% endthumbnail %}
       {% endwith %}
     {% empty %}
     <tr>

@@ -93,7 +93,7 @@ INSTALLED_APPS = [
     'django.contrib.admindocs',
     'south',
     'sekizai',
-    'sorl.thumbnail',
+    'easy_thumbnails',
     'django_notify',
     'wiki',
     'wiki.plugins.macros',
